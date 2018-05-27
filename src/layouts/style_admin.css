@@ -1,0 +1,15 @@
+@import 'antd/dist/antd.css';
+
+.main {
+  height: 100vh;
+}
+
+.header {
+  height: 64px;
+}
+
+/* sider */
+.sider {
+  width: 240px;
+  background-color: #ffffff;
+}

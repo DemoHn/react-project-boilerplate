@@ -6,7 +6,7 @@ class TODO extends Component {
   constructor() {
     super()
     this.state = {
-      pendingItem: ''
+      pendingItem: '',
     }
 
     this.updateInputValue = this.updateInputValue.bind(this)
@@ -35,9 +35,7 @@ class TODO extends Component {
   }
 }
 
-const mapStateToProps = (state) => {
-  return state.todo
-}
+const mapStateToProps = (state) => state.todo
 
 export default connect(mapStateToProps)(TODO)
 

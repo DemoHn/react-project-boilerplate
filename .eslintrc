@@ -1,0 +1,34 @@
+{
+  "extends": [
+    "react-app",
+    "airbnb"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 6
+  },
+  "rules": {
+    "no-console": "off",
+    "strict": [
+      "error",
+      "global"
+    ],
+    "semi": [
+      2,
+      "never"
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "curly": "warn",
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    ]
+  }
+}
