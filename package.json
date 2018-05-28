@@ -13,7 +13,8 @@
     "react-dom": "^16.4.0",
     "react-scripts": "1.1.4",
     "react-sticky-box": "^0.6.2",
-    "react-style-proptype": "^3.2.1"
+    "react-style-proptype": "^3.2.1",
+    "shortid": "^2.2.8"
   },
   "scripts": {
     "start": "react-scripts start",

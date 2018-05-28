@@ -15,7 +15,7 @@ class DefaultLayout extends Component {
 
     this.styles = {
       main: {
-        backgroundColor: 'white',
+        backgroundColor: 'transparent',
       },
     }
   }

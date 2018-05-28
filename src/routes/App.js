@@ -5,16 +5,16 @@ import GuideLayout from '../layouts/GuideLayout'
 import logo from '../assets/naive.png'
 // components
 import Introduction from './Introduction'
-import TODO from './TODO'
+import TodoApp from './TodoApp'
 
-const Title = (margin) => {
+const Title = () => {
   const titleStyle = {
-    marginTop: margin,
-    marginBottom: margin,
+    marginTop: 45,
+    marginBottom: 45,
   }
   return (
     <div style={titleStyle}>
-      <img src={logo} alt="logo" width={240} />
+      <img src={logo} alt="logo" width={210} />
     </div>
   )
 }
@@ -31,7 +31,7 @@ const Sider = () => (
 )
 
 const App = () => (
-  <GuideLayout header={Title(45)} sider={Sider()} siderWidth={256}>
+  <GuideLayout header={Title} sider={Sider} siderWidth={256}>
     <div
       className="contentFrame"
       style={{
@@ -40,7 +40,7 @@ const App = () => (
     >
       <Switch>
         <Route path="/" exact component={Introduction} />
-        <Route path="/todo" component={TODO} />
+        <Route path="/todo" component={TodoApp} />
       </Switch>
     </div>
   </GuideLayout>

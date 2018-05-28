@@ -59,9 +59,9 @@ class GuideLayout extends Component {
     }
     return (
       <DefaultLayout style={this.styles.main}>
-        <div>{header}</div>
+        <div>{header()}</div>
         <div className="container" style={this.styles.container}>
-          <StickyBox style={stickyBoxStyle}>{sider}</StickyBox>
+          <StickyBox style={stickyBoxStyle}>{sider()}</StickyBox>
           <div className="content" style={this.styles.content}>{children}</div>
         </div>
       </DefaultLayout >

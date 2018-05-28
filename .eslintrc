@@ -20,6 +20,7 @@
       "error",
       "single"
     ],
+    "jsx-a11y/href-no-hash": "off",
     "curly": "warn",
     "react/jsx-filename-extension": [
       1,

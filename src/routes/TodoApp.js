@@ -1,9 +1,13 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import { connect } from 'dva'
 import { Button, Input } from 'antd'
-import TODOItem from '../components/TODO'
+import shortid from 'shortid'
+import TodoItem from '../components/TodoItem'
+import TodoContainer from '../components/TodoContainer'
 
-class TODO extends Component {
+
+class TodoApp extends Component {
   constructor() {
     super()
     this.state = {
@@ -36,8 +40,13 @@ class TODO extends Component {
     const { inputVal } = this.state
     return (
       <div>
-        <div><h1>TODO App</h1></div>
-        {items.map((item, index) => (<TODOItem item={item} key={index} />))}
+        <div style={{ marginBottom: 10 }}>
+          <h1>TODO App</h1>
+        </div>
+        <TodoContainer ordered={false}>
+          {items.map(item => (<TodoItem item={item} key={shortid.generate()} />))}
+        </TodoContainer>
+
         <div>
           <Input
             style={{ width: '40%', marginRight: 20 }}
@@ -60,5 +69,5 @@ const mapDispatchToProps = dispatch => ({
     dispatch({ type: 'todo/addItem', item: pendingItem })
   },
 })
-export default connect(mapStateToProps, mapDispatchToProps)(TODO)
+export default connect(mapStateToProps, mapDispatchToProps)(TodoApp)
 
