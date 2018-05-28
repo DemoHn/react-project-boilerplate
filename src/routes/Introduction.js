@@ -10,7 +10,7 @@ const Introduction = () => (
     <div className="container">
       <Label>Last Updated: 2018-05-28</Label>
     </div>
-    <p>
+    <p style={{ fontSize: 16 }}>
       Hello World!
     </p>
   </div>

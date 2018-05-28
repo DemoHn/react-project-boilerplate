@@ -1,10 +1,11 @@
 import React from 'react'
-import { Route, Link } from 'dva/router'
+import { Route, Link, Switch } from 'dva/router'
 import { Menu } from 'antd'
 import GuideLayout from '../layouts/GuideLayout'
 import logo from '../assets/naive.png'
 // components
 import Introduction from './Introduction'
+import TODO from './TODO'
 
 const Title = (margin) => {
   const titleStyle = {
@@ -37,7 +38,10 @@ const App = () => (
         padding: '10px 20px',
       }}
     >
-      <Route path="/" component={Introduction} />
+      <Switch>
+        <Route path="/" exact component={Introduction} />
+        <Route path="/todo" component={TODO} />
+      </Switch>
     </div>
   </GuideLayout>
 )

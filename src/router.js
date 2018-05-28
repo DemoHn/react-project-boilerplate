@@ -1,5 +1,5 @@
 import React from 'react'
-import { Router, Route, Link, Switch } from 'dva/router'
+import { Router, Route } from 'dva/router'
 import PropTypes from 'prop-types'
 import { history as historyPropTypes } from 'history-prop-types'
 import App from './routes/App'
