@@ -8,7 +8,7 @@ const Introduction = () => (
   <div>
     <h1>React-Project-Boilerplate</h1>
     <div className="container">
-      <Label>Last Updated: 2018-05-28</Label>
+      <Label>Last Updated: 2018-05-29</Label>
     </div>
     <p style={{ fontSize: 16 }}>
       Hello World!

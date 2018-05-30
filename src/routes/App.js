@@ -9,12 +9,12 @@ import TodoApp from './TodoApp'
 
 const Title = () => {
   const titleStyle = {
-    marginTop: 45,
-    marginBottom: 45,
+    marginTop: 20,
+    marginBottom: 20,
   }
   return (
     <div style={titleStyle}>
-      <img src={logo} alt="logo" width={210} />
+      <img src={logo} alt="logo" width={200} />
     </div>
   )
 }

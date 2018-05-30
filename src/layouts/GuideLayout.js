@@ -70,8 +70,8 @@ class GuideLayout extends Component {
 }
 
 GuideLayout.propTypes = {
-  header: PropTypes.node,
-  sider: PropTypes.node,
+  header: PropTypes.func,
+  sider: PropTypes.func,
   siderWidth: PropTypes.number,
   children: PropTypes.node,
 
