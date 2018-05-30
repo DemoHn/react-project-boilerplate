@@ -19,19 +19,19 @@ const Title = () => {
   )
 }
 
-const Sider = () => (
-  <Menu mode="inline" defaultSelectedKeys={['index']}>
-    <Menu.Item key="index">
+const Sider = ({ pathname }) => (
+  <Menu mode="inline" defaultSelectedKeys={['/']} selectedKeys={[pathname]}>
+    <Menu.Item key="/">
       <Link to="/" href="/">Index</Link>
     </Menu.Item>
-    <Menu.Item key="todo">
+    <Menu.Item key="/todo">
       <Link to="/todo" href="/todo">TODO App</Link>
     </Menu.Item>
   </Menu>
 )
 
-const App = () => (
-  <GuideLayout header={Title} sider={Sider} siderWidth={256}>
+const App = ({ location }) => (
+  <GuideLayout header={Title} sider={() => Sider(location)} siderWidth={256} >
     <div
       className="contentFrame"
       style={{
@@ -43,7 +43,7 @@ const App = () => (
         <Route path="/todo" component={TodoApp} />
       </Switch>
     </div>
-  </GuideLayout>
+  </GuideLayout >
 )
 
 export default App

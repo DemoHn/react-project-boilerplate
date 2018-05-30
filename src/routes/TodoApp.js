@@ -72,8 +72,7 @@ class TodoApp extends Component {
 Nevertheless, it demostrates most of React features, including custom component, 
 event handler, state management, etc.  
 
-Before starting to code, we should think of requirement carefully and define the global state
-of the app. In this example, the model is defined as \`todo\` in \`src/models/todo.js\`, where the structure 
+In this example, the model is defined as \`todo\` in \`src/models/todo.js\`, where the structure 
 is concluded as follows:
 
 \`\`\`
@@ -92,8 +91,6 @@ const todo = {
 \`\`\`
 
 _For more details, check [dva.model](https://github.com/dvajs/dva/blob/master/docs/API.md#model)_
-
-Next step is to define the 'TodoApp' container in \`src/routes/TodoApp.js\`
 `
             }
           </BlockNote>
