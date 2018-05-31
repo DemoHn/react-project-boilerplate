@@ -6,6 +6,7 @@ import logo from '../assets/naive.png'
 // components
 import Introduction from './Introduction'
 import TodoApp from './TodoApp'
+import GitHubAPI from './GitHubAPI'
 
 const Title = () => {
   const titleStyle = {
@@ -27,6 +28,9 @@ const Sider = ({ pathname }) => (
     <Menu.Item key="/todo">
       <Link to="/todo" href="/todo">TODO App</Link>
     </Menu.Item>
+    <Menu.Item key="/github">
+      <Link to="/github" href="/github">GitHub API</Link>
+    </Menu.Item>
   </Menu>
 )
 
@@ -41,6 +45,7 @@ const App = ({ location }) => (
       <Switch>
         <Route path="/" exact component={Introduction} />
         <Route path="/todo" component={TodoApp} />
+        <Route path="/github" component={GitHubAPI} />
       </Switch>
     </div>
   </GuideLayout >

@@ -1,4 +1,4 @@
-// react/forbid-prop-types: 0
+/* eslint react/forbid-prop-types: 0 */
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'dva'
@@ -41,10 +41,8 @@ class TodoApp extends Component {
     const { inputValue } = this.state
     return (
       <div>
-        <div style={{ marginBottom: 10 }}>
-          <h1>TODO App</h1>
-        </div>
-        <div style={{ marginTop: 20, width: 600 }}>
+        <h1>TODO App</h1>
+        <div style={{ marginTop: 30, width: 600 }}>
           <BlockNote header="Demo" markdownMode={false}>
             <div>
               <TodoContainer ordered={ordered}>

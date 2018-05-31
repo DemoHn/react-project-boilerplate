@@ -2,6 +2,8 @@ import dva from 'dva'
 import createBrowserHistory from 'history/createBrowserHistory'
 import CounterModel from './models/counter'
 import TODOModel from './models/todo'
+import GitHubModel from './models/github'
+
 import AppRouter from './router'
 
 // ref: https://github.com/sorrycc/github-stars/blob/master/src/index.js
@@ -14,6 +16,7 @@ const app = dva({
 // 2. load models
 app.model(CounterModel)
 app.model(TODOModel)
+app.model(GitHubModel)
 
 // 3. load router
 app.router(AppRouter)
